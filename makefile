@@ -3,7 +3,7 @@ mu := 5
 sigma := 0.3
 
 sample.pdf: sample.dat
-	python graficando.py sample.dat $(mu) $(sigma)
+	python3 graficando.py sample.dat $(mu) $(sigma)
 
 sample.dat: sample.x
 	./sample.x $(N) $(mu) $(sigma)

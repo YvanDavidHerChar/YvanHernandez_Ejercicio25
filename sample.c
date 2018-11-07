@@ -27,7 +27,7 @@ float* arrayGausiano (int N, float mu, float sigma)
 	  v = ((double) rand()/(RAND_MAX))*2 - 1.0;
 	  s = u * u + v * v;
 	 } while( (s >= 1.0) || (s == 0.0) );
-	 s = sqrt(-2.0 * log(s));
+	 s = sqrt(-2.0 * log(s)/s);
 	 spare = v * s;
 	 papillas[i]=mu + sigma * u * s;
 	}
